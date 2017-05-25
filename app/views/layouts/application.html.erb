@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Movie</title>
-    <%= csrf_meta_tags %>
+<head>
+	<title>
+        <% if yield(:title).present? %>
+        <%= yield(:title) %>
+        <% else %>
+       Este es el título de nuestra página web! Limítalo a 70 caracteres!
+        <% end %>
+    </title>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <% if yield(:meta_description).present? %>
+    <meta name="description" content="<%= yield(:meta_description) %>" />
+    <% else %>
+    <meta name="description" content=" Este es la descripción de nuestra página web! Limítalo a 165 caracteres!" />
+    <% end %>
 
-  <body>
+    <%= stylesheet_link_tag    "application" %>
+    <!-- For the homepage -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    
+<link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Inconsolata|Oswald|PT+Sans|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300" rel="stylesheet">
+
+</head>
+<body>
+    <% flash.each do |key,value| %>
+
+    <p> <%= value %> </p>
+
+    <% end %>
+    
     <%= yield %>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
