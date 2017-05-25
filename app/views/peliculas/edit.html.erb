@@ -1,0 +1,11 @@
+<%= form_for @pelicula do |peli|%>
+ 
+<%= peli.text_field :name%>
+<%= peli.text_field :stars%>
+<%= peli.text_field :main_actor%>
+<%= peli.text_field :year%>
+
+ 
+<%= peli.submit 'enviar peli'%>
+ 
+<%end%>
