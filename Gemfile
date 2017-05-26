@@ -43,7 +43,6 @@ gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
