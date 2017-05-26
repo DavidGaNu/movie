@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'statics/index'
+
+  get 'statics/about'
+
   get 'bienvenido/index'
   resources :articulos
   root 'bienvenido#index'
