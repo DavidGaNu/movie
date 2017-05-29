@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'bienvenido/index'
   resources :articulos
   root 'bienvenido#index'
-  	get 'users/index'
+  get 'users/index'
 	get 'users/current_user'
 	get 'peliculas/index'
 	get 'peliculas/show'
