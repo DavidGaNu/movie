@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   get 'bienvenido/index'
   resources :articulos
-  root 'bienvenido#index'
+  get 'bienvenido/index'
   get 'users/index'
 	get 'users/current_user'
-	get 'peliculas/index'
+	root 'peliculas#index'
 	get 'peliculas/show'
 	resources :users
 	resources :peliculas

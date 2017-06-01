@@ -158,12 +158,7 @@
 	width: 23%;
 }
 
-.header1 {
-	background-color: #D10019;
-	text-align: center;
-	color: #FFFFFF;
-	height: 50%;
-}
+
 
 .petit2 {
 	position: fixed;
@@ -292,28 +287,33 @@ button.boto1 {
 	color: white;
 }
 
+.header1 {
+	background-color: #D10019;
+	text-align: center;
+	color: #FFFFFF;
+	height: 50%;
+}
 
-
-	body {
+.body1 {
     background-image: url("sfondo.gif");
     background-color: #cccccc;
 	}
 
-	a:link {
-		color: black
+a:link {
+	color: black
 	}
 
-	a:hover {
-		color: black;
-		background-color: #008CBA
+a:hover {
+	color: black;
+	background-color: #008CBA
 	}
 
-	a:visited {
-		color: black
+a:visited {
+	color: black
 	}
 
-	a:active {
-		color: black
+a:active {
+	color: black
 	}
 
 .log {
