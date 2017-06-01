@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @peli.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @peli.description %>
+</p>
+
+<p>
+  <strong>Movie length:</strong>
+  <%= @peli.movie_length %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @peli.director %>
+</p>
+
+<p>
+  <strong>Main actor:</strong>
+  <%= @peli.main_actor %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @peli.rating %>
+</p>
+
+<%= link_to 'Edit', edit_peli_path(@peli) %> |
+<%= link_to 'Back', pelis_path %>

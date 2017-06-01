@@ -1,0 +1,2 @@
+class Peli < ApplicationRecord
+end

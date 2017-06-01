@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pelis
   devise_for :users
   get 'bienvenido/index'
   resources :articulos

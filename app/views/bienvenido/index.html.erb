@@ -1,4 +1,66 @@
-<%=link_to "Nosotros", about_path %> <br/>
-<%=link_to "Login", new_user_session_path %> <br/>
-<%=link_to "Sign up", new_user_registration_path %> <br/>
-<%=link_to "Pelis", index_path %> <br/>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rotten Tomatoes 2</title>
+	<script type="text/javascript" src='assets\javascripts\javascript.js'> </script>
+	<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+	<header class="header1">
+		<nav>
+			<ul class="row">
+				<div class="col-md-3">
+					<img src="http://i.imgur.com/yEZmDb2.png" height="80px" width="80px">
+					<h4>Happy Potatoes</h4>
+				</div>
+			
+				<div class="col-md-3" style="margin-top: 2%" >
+					<FORM method=GET action="http://www.google.es/search"> 
+    				<fieldset style="color: black"> 
+        				<input type=hidden name=ie value=UTF-8 /> 
+        				<input type=hidden name=oe value=UTF-8 /> 
+                         
+        				<INPUT TYPE=text id="s" name="q" value="" size="50" /> 
+        				 
+   					</fieldset>
+   					</FORM>
+				</div>
+				<div class="col-md-2" style="margin-top: 2%">
+						<font size=-1 style="color: black">
+        				<INPUT type=submit  id="x" name=btnG VALUE="Buscar en Google" /> 
+        				</font>
+				</div>
+				<div class="col-md-1" style="margin-top: 2%">
+					<button class="log"> <%=link_to "Login", new_user_session_path %></button> <br/>
+				</div>
+				<div class="col-md-1" style="margin-top: 2%">
+					<button class="log2"><%=link_to "Signup", new_user_registration_path %></button> <br/>
+				</div>
+			</ul>
+		</nav>
+	</header>
+	
+	<h1>Peliculas</h1>
+
+		<% @peliculas.each do |peli| %>
+
+		<p> <%= link_to peli.name, peli %> </p>
+		<p> <%= peli.stars %> </p>
+		<p> <%= peli.main_actor %> </p>
+		<p> <%= peli.year %> </p>
+
+		<%= link_to "Editar pelicula", edit_pelicula_path(peli) %><br><br><br>
+
+		<%end%>
+
+		<button><%= link_to "Añadir nueva pelicula", new_pelicula_path %></button>
+
+
+
+	<footer>
+		<nav>
+			
+		</nav>
+	</footer>
+</html>
