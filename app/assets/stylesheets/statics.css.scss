@@ -294,6 +294,16 @@ button.boto1 {
 	height: 50%;
 }
 
+.footer1 {
+	background-color: #D10019;
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+  	text-align: center;
+}
+
 .body1 {
     background-image: url("sfondo.gif");
     background-color: #cccccc;
@@ -334,4 +344,8 @@ a:active {
     border: 2px solid #555555;
     padding: 10px 24px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.titols{
+	font-size: 12px;
 }
