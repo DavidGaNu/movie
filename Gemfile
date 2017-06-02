@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.11'
 gem 'devise', '~> 4.2'
 gem 'activeadmin', github: 'activeadmin'
+gem 'cancancan', '~> 2.0'
 
 
 gem 'coffee-script-source', '1.8.0'
