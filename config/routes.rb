@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
+  resources :pelis
   devise_for :users
   get 'bienvenido/index'
   resources :articulos
-  root 'bienvenido#index'
+  get 'bienvenido/index'
   get 'users/index'
 	get 'users/current_user'
-	get 'peliculas/index'
-	get 'peliculas/show'
+	root 'peliculas#index'
+    get 'statics/about' => 'statics#about', :as => 'about'
+	  get 'peliculas/show'
 	resources :users
 	resources :peliculas
 
