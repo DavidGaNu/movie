@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :pelis
-  devise_for :users
+  # devise_for :users
   get 'bienvenido/index'
   resources :articulos
   get 'bienvenido/index'

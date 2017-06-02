@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
 gem 'devise', '~> 4.2'
+gem 'activeadmin', github: 'activeadmin'
 
 
 gem 'coffee-script-source', '1.8.0'
