@@ -6,7 +6,11 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
+<<<<<<< HEAD
   # config.secret_key = '767a5c9ee94217a3ad89bc17a6eee261e44a1948fe3dd4fbbf32730c90ad679f68d27bc9119ca70d253d077734cd2c18aab4c91bf78ead76bf886a9fda08ceec'
+=======
+  # config.secret_key = '156ea1536c3bf291b177ec07e6358f04080e14163e393a5e7af6400ece1fbb0bbcf2376df9f86562bd25c4e758ce5470fc7840137ada91a2b39f355a29f4c20c'
+>>>>>>> 1597f44daf99057fe5246db958622d8bc9c17d12
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -108,7 +112,11 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
+<<<<<<< HEAD
   # config.pepper = '7c702a45e5094ac22ebbaf657c29254484c83f76c6dfa452e47f9d691ac956ce3cc18e4bcdd85dddfe3a8e2b4f34d88cedfc643d3d48c46857caec61bb077eea'
+=======
+  # config.pepper = '0b714b0eccf8b6aeb8623f70348c1f65196e23dfc3ae9588031d1f483ad83bc9473c868423f33ec0b1bd8d691e5550538f6ac0a14bdb877ed1d1474bcf1f1a89'
+>>>>>>> 1597f44daf99057fe5246db958622d8bc9c17d12
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -223,7 +231,11 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
+<<<<<<< HEAD
    config.scoped_views = true
+=======
+  # config.scoped_views = false
+>>>>>>> 1597f44daf99057fe5246db958622d8bc9c17d12
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).
@@ -274,4 +286,8 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 1597f44daf99057fe5246db958622d8bc9c17d12
