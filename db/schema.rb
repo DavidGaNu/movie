@@ -10,11 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170605111234) do
-=======
-ActiveRecord::Schema.define(version: 20170602102107) do
->>>>>>> 1597f44daf99057fe5246db958622d8bc9c17d12
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -90,7 +85,6 @@ ActiveRecord::Schema.define(version: 20170602102107) do
     t.datetime "updated_at",   null: false
   end
 
-<<<<<<< HEAD
   create_table "settings", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "country"
@@ -100,8 +94,6 @@ ActiveRecord::Schema.define(version: 20170602102107) do
     t.index ["user_id"], name: "index_settings_on_user_id"
   end
 
-=======
->>>>>>> 1597f44daf99057fe5246db958622d8bc9c17d12
   create_table "top_movies", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "stars"
